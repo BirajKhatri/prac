@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{position:relative}
+        li::before{content:'☑';color:red;}
+        li::after{content:'';position:absolute;top:20px;left:14px;width:30px;height:4px;background: red;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Lorem, ipsum dolor sit amet </li>
+        <li>consectetur adipisicing elit.</li>
+        <li> Officiis ipsa perspiciatis tempora, vero illo eos eum q</li>
+    </ul>
+</body>
+</html>

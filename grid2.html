@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{ display: grid; grid-template-areas: 'h h h h h' '. b a d .' '. b c d .' 'e e e e e';}
+        .box{ border: 2px solid #000; padding: 30px;}
+        .hh{ grid-area: h;} .a{ grid-area: a;} .b{ grid-area: b;} 
+        .c{ grid-area: c;} .d{ grid-area: d;} .e{ grid-area: e;} 
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box hh">Header</div>
+        <div class="box a">Menu</div>
+        <div class="box b">Left</div>
+        <div class="box c">Mid</div>
+        <div class="box d">Right</div>
+        <div class="box e">Footer</div>
+    </div>
+</body>
+</html>

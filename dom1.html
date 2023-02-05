@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .r{
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h1><span>Hello</span></h1>
+    <div id="a">div1</div>
+    <div class="b">div2</div>
+    <script>
+        var e;
+        e=document.getElementsByTagName('h1')[0];
+        e=document.getElementsByTagName('h1')[1].innerText;
+        e=document.getElementsByTagName('h1')[1].innerHTML;
+        e=document.getElementById('a').innerText;
+        e=document.getElementsByClassName('b')[0].innerHTML;
+        e=document.querySelector('h1');
+        e=document.querySelectorAll('h1')[0].innerHTML;
+        document.querySelector('#a').style.background="red";
+        document.querySelector('#a').classList.add('r');
+        document.querySelector('#a').classList.remove('r');
+        console.log(e);
+    </script>
+</body>
+</html>

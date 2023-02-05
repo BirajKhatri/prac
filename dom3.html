@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">This is demo</h1>
+    <button onclick="document.getElementById('a').style.display='none'">hide</button>
+    <button onclick="document.getElementById('a').style.display='block'">Show</button>
+    <button onclick="document.getElementById('a').style.background='red'">bg</button>
+    <button onclick="document.getElementById('a').style.fontSize='44px'">fonts-ze</button>
+    <button onclick="aa()">All</button>
+    <script>
+        function aa()
+        {
+            document.getElementById('a').style.background='red';
+            document.getElementById('a').style.fontSize='77px'
+        }
+    </script>
+ 
+    <hr>
+    <button id="c" onclick="aa()">Show</button>
+    <ul style="display:none;" id="abc">
+        <li>Home</li> <li>Home</li> <li>Home</li>
+    </ul>
+    <script>
+        function aa()
+        {
+            if( document.getElementById('abc').style.display=='none')
+            {
+            document.getElementById('abc').style.display='block'
+            document.getElementById('c').innerText='HIde'
+            }
+            else 
+            {
+                document.getElementById('abc').style.display='none'
+            document.getElementById('c').innerText='Show'
+            }
+        }
+    </script>
+</body>
+</html>
